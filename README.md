@@ -18,16 +18,15 @@ The API should be available in your Max search path the next time you run it.
 
 ## Usage
 
-Vimeo Max/MSP API contains an object called `getvimeofile`. 
+Vimeo Max/MSP API is encapsulated an object called `getvimeofile`.  
+This object takes in the ID of your video on Vimeo, and an API token. [Click Here](https://authy.vimeo.com/auth/vimeo/maxmsp) to generate an API token for your Max/MSP patch.  
+The help page contains an example player patch that should get you started.  
 
-![hints](docs/tooltips.gif)
+![help](docs/help.gif)
 
-This object takes in the ID of your video on Vimeo, and an API token. [Click Here](https://authy.vimeo.com/auth/vimeo/maxmsp) to generate an API token for your Max/MSP patch.
+![hints](docs/tooltips.gif)  
 
-This repo also contains 2 example patches that use the API - player and mixer. Both load a vimeo Video into `jit.qt.movie` and use it for simple Jitter applications.
-
-
-Here's a gif of a quick'n'dirty patch mixing two Vimeo videos.
+Here's a gif of a quick'n'dirty patch mixing two Vimeo videos using a A/B Deck structure. The patcher is available in the `/examples` directory
 
 ![maxmsp](docs/maxmsp.gif)
 
