@@ -14,9 +14,9 @@ Download the latest release and copy the max-vimeo folder into the Max 7 Package
 Mac OS path: `~/Users/Documents/Max`  
 Windows path: `C:\ProgramData\Max 7\Packages`  
 
-The API should be available in your Max search path the next time you run it.  
+The `getvimeofile` object should be available in your Max search path the next time you run it.  
 
-> The `VimeoPlayer` component requires video file access via the Vimeo API. Accessing video files is limited to [Vimeo Pro and Business](https://vimeo.com/upgrade) customers. 
+> The `getvimeofile` requires video file access via the Vimeo API. Accessing video files is limited to [Vimeo Pro and Business](https://vimeo.com/upgrade) customers. 
 
 > You can only stream videos from your own Vimeo account. Access to all videos is limited to partnership-level integrations. If you are interested in a partnership, reach out to casey@vimeo.com
 
