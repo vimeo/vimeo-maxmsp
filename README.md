@@ -16,6 +16,10 @@ Windows path: `C:\ProgramData\Max 7\Packages`
 
 The API should be available in your Max search path the next time you run it.  
 
+> The `VimeoPlayer` component requires video file access via the Vimeo API. Accessing video files is limited to [Vimeo Pro and Business](https://vimeo.com/upgrade) customers. 
+
+> You can only stream videos from your own Vimeo account. Access to all videos is limited to partnership-level integrations. If you are interested in a partnership, reach out to casey@vimeo.com
+
 ## Usage
 
 Vimeo Max/MSP API is encapsulated an object called `getvimeofile`.  
