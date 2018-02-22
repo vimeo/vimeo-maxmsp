@@ -34,3 +34,4 @@ Here's a gif of a quick'n'dirty patch mixing two Vimeo videos using a A/B Deck s
 
 ![maxmsp](docs/maxmsp.gif)
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
