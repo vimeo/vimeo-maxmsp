@@ -36,12 +36,13 @@ function readystatechange()
 	try {
 		post('Received response. Parsing URL');
 		var link = body.files[1].link;
+		outlet(0, link);
 	}
 	// Throw error
 	catch (e) {
 		post(e.name, ':', e.message);
+		return;
 	}
-	outlet(0, link);
 }
 
 
