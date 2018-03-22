@@ -70,8 +70,7 @@
 					"outlettype" : [ "", "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 139.0, 35.5, 257.0, 18.0 ],
-					"style" : "",
-					"text" : "1f477847137d4ca3f373cc955af8a5d3"
+					"style" : ""
 				}
 
 			}
@@ -98,8 +97,7 @@
 					"outlettype" : [ "", "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 24.0, 34.0, 104.0, 21.0 ],
-					"style" : "",
-					"text" : "157920432"
+					"style" : ""
 				}
 
 			}
@@ -220,15 +218,15 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "getvimeofile.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/max-vimeo/patchers",
-				"patcherrelativepath" : "../../Documents/Max 7/Packages/max-vimeo/patchers",
+				"bootpath" : "~/Side/VimeoMaxAPI/max-vimeo/patchers",
+				"patcherrelativepath" : "../../../../../Side/VimeoMaxAPI/max-vimeo/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "VimeoRequest.js",
 				"bootpath" : "~/Documents/Max 7/Packages/max-vimeo/javascript",
-				"patcherrelativepath" : "../../Documents/Max 7/Packages/max-vimeo/javascript",
+				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
