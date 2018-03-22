@@ -1,6 +1,6 @@
 {
     "author" : "Vimeo",
-    "description" : "Play and manipulate Vimeo videos in Max/MSP and Jitter",
+    "description" : "Play and manipulate Vimeo videos in Max/MSP and Jitter. Open Source. See https://github.com/vimeo/vimeo-maxmsp",
     "homepatcher" : "player.maxpat",
     "max_version_min" : "7.1", "max_version_max" : "none",
     "name" : "Vimeo Max/MSP",
@@ -18,7 +18,7 @@
         "reverse_domain" : "com.vimeo",
         "copyright" : "MIT"
     },
-    "tags" : [ ],
+    "tags" : [ "video", "API", "mp4", "movie"],
     "version" : "1.0.0",
     "website" : "https://vimeo.com"
 }
