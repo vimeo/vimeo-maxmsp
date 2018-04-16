@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet href="./c74ref.xsl" type="text/xsl"?>
+
+<c74object name="getvimeofile">
+    <digest>
+        Play and manipulate Vimeo videos in Max/MSP and Jitter
+    </digest>
+    ​
+    <description>
+        Play and manipulate Vimeo videos in Max/MSP and Jitter
+    </description>
+
+    <!--METADATA-->
+    <metadatalist>
+        <metadata name="author">Vimeo</metadata>
+        <metadata name="tag">video</metadata>
+        <metadata name="tag">API</metadata>
+        <metadata name="tag">movie</metadata>
+        <metadata name="tag">graphics</metadata>
+        <metadata name="tag">vimeo</metadata>
+        <metadata name="tag">visuals</metadata>
+    </metadatalist>
+
+    <!--INLETS-->
+    <inletlist>
+        <inlet id="0" type="textedit">
+            <digest>Video ID</digest>
+            <description>
+                Input should be a valid and accessible Vimeo video ID.
+            </description>
+        </inlet>
+        <inlet id="1" type="textedit">
+            <digest>Access Token</digest>
+            <description>
+                Input should be a valid API token.
+            </description>
+        </inlet>
+    </inletlist>
+    <!--OUTLETS-->
+    <outletlist>
+        <outlet id="0" type="message">
+            <digest>Video URL</digest>
+        </outlet>
+    </outletlist>
+    <!--SEEALSO-->
+    <seealsolist>
+        <seealso name="jit.matrixset"/>
+    </seealsolist>
+</c74object>
