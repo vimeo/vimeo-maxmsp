@@ -3,11 +3,11 @@
 
 <c74object name="getvimeofile">
     <digest>
-        Play and manipulate Vimeo videos in Max/MSP and Jitter
+        Easily stream your Vimeo videos into Max/MSP and Jitter
     </digest>
     ​
     <description>
-        Play and manipulate Vimeo videos in Max/MSP and Jitter
+        Easily stream your Vimeo videos into Max/MSP and Jitter
     </description>
 
     <!--METADATA-->
@@ -19,6 +19,8 @@
         <metadata name="tag">graphics</metadata>
         <metadata name="tag">vimeo</metadata>
         <metadata name="tag">visuals</metadata>
+        <metadata name="tag">jitter</metadata>
+        <metadata name="tag">tool</metadata>        
     </metadatalist>
 
     <!--INLETS-->
@@ -26,20 +28,20 @@
         <inlet id="0" type="textedit">
             <digest>Video ID</digest>
             <description>
-                Input should be a valid and accessible Vimeo video ID.
+                Input must be a valid Vimeo video ID.
             </description>
         </inlet>
         <inlet id="1" type="textedit">
             <digest>Access Token</digest>
             <description>
-                Input should be a valid API token.
+                Input should be a valid Vimeo API token.
             </description>
         </inlet>
     </inletlist>
     <!--OUTLETS-->
     <outletlist>
         <outlet id="0" type="message">
-            <digest>Video URL</digest>
+            <digest>Vimeo Video URL</digest>
         </outlet>
     </outletlist>
     <!--SEEALSO-->
