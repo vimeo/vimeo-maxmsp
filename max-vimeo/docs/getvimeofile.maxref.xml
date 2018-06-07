@@ -8,6 +8,7 @@
     ​
     <description>
         Easily stream your Vimeo videos into Max/MSP and Jitter
+        Requires a Vimeo account. https://github.com/vimeo/vimeo-maxmsp
     </description>
 
     <!--METADATA-->

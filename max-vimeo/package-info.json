@@ -1,7 +1,7 @@
 {
     "author" : "Vimeo",
-    "description" : "Easily stream your Vimeo videos into Max/MSP and Jitter. More info: https://github.com/vimeo/vimeo-maxmsp",
-    "homepatcher" : "player.maxpat",
+    "description" : "Easily stream your Vimeo videos into Max/MSP and Jitter. Requires a Vimeo account. More info: https://github.com/vimeo/vimeo-maxmsp",
+    "homepatcher" : "vimeo-player.maxpat",
     "max_version_min" : "7.1", "max_version_max" : "none",
     "name" : "Vimeo Max/MSP",
     "os" : {
@@ -19,6 +19,6 @@
         "copyright" : "MIT"
     },
     "tags" : [ "video", "API", "mp4", "movie"],
-    "version" : "1.0.0",
+    "version" : "1.0.1",
     "website" : "https://vimeo.com"
 }
