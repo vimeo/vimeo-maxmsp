@@ -3,8 +3,6 @@ const fs = require('fs');
 const utils = require("./utils");
 const Vimeo = require('vimeo').Vimeo;
 
-// const videoId = '265496124';
-
 // Attempt to load the dotenv module, which is needed to load the .env file containing the Vimeo API keys.
 let dotenv_module;
 try {
@@ -21,10 +19,12 @@ if (!process.env.VIMEO_ACCESS_TOKEN) {
 	process.exit(1);
 }
 
-function requestVideo(videoId, authToken) {
+function requestVideo(videoUrl, authToken) {
 	if (!utils.isTokenValid(authToken)) {
 		return;
 	}
+
+	let videoId = videoUrl.match(/(vimeo\.com\/)?([0-9]+)/)[2];
 
 	let api = new Vimeo(null, null, authToken);
 
