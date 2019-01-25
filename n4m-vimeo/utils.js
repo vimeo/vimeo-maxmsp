@@ -1,9 +1,10 @@
 module.exports = {
 	isTokenValid: function(authToken) {
-		if (authToken.length <= 4) {
-			return false;
+		// If token is not null or empty, return true
+		if (authToken && authToken !== '') {
+			return true;
 		}
-		return true;
+		return false;
 	},
 
 	/**
