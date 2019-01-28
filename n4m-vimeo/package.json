@@ -1,0 +1,15 @@
+{
+  "name": "vimeo_maxmsp",
+  "version": "0.0.1",
+  "description": "Stream your Vimeo videos in Max",
+  "main": "vimeo.js",
+  "scripts": {
+    "start": "node vimeo.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^6.2.0",
+    "max-api": "^1.0.1",
+    "vimeo": "^2.1.1"
+  }
+}
