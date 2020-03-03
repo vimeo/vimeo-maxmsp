@@ -3,10 +3,15 @@ const fs = require('fs');
 const utils = require("./utils");
 const Vimeo = require('vimeo').Vimeo;
 
+const https = require("https");
+
+maxApi.post('hw');
+
+
 // Attempt to load the dotenv module, which is needed to load the .env file containing the Vimeo API keys.
 let dotenv_module;
 try {
-	dotenv_module = require("dotenv");
+	dotenv_module = require('dotenv');
 	dotenv_module.config();
 } catch (e) {
 	maxApi.post(e, maxApi.POST_LEVELS.ERROR);
@@ -15,7 +20,7 @@ try {
 }
 
 if (!process.env.VIMEO_ACCESS_TOKEN) {
-	maxApi.post("No value for key VIMEO_ACCESS_TOKEN in .env file. Please make sure to create a file called .env with a Vimeo API Access Token.", maxApi.POST_LEVELS.ERROR);
+	maxApi.post("No value for key VIMEO_ACCESS_TOKEN in .env file. Please make sure to create a file called .env with a Vimeo API Access Token.");
 	process.exit(1);
 }
 
@@ -69,7 +74,81 @@ function getVideoSrc(error, body, status_code, headers) {
 }
 
 maxApi.addHandler("get", (...arguments) => {
+	// request("https://player.vimeo.com/video/393732499/config")
+	// .then((data) => {
+	// 	// Master Playlist URL
+	// 	const akamaiCDNUrl = data.request.files.hls.cdns.akfire_interconnect_quic.url;
+	// 	let segmentUrlList = [];
+
+	// 	getHLSManifest(akamaiCDNUrl)
+	// 		.then((data) => {
+	// 			const url = new require('url')
+	// 			// Media Playlist URL
+	// 			const newUrl = new URL(data.variants[0].uri, akamaiCDNUrl);
+	// 			getHLSManifest(newUrl)
+	// 				.then((data) => {
+	// 					data.segments.forEach((segment) => {
+	// 						const uri = segment.uri;
+	// 						maxApi.post(new URL(uri, newUrl));
+	// 						segmentUrlList.push(new URL(uri, newUrl));
+	// 					});
+	// 					maxApi.outlet(segmentUrlList);	
+	// 				})
+	// 		})
+	// });
 	const videoId = arguments[1];
 	requestVideo(videoId, process.env.VIMEO_ACCESS_TOKEN);
 });
+
+
+function request(requrl) {
+	return new Promise((resolve, reject) => {
+		let data = "";
+		https.get(requrl, (res) => {
+			// maxApi.post('# response url', res.url);
+			res.on("data", (d) => {
+				data = data + d;
+			});
+
+			res.on("end", () => {
+				resolve(JSON.parse(data));
+			})
+		}).on("error", e => {
+			reject(e);
+		});
+	});
+}
+
+function getHLSManifest(requrl) {
+	return new Promise((resolve, reject) => {
+		let data = "";
+		https.get(requrl, (res) => {
+			// maxApi.post('# response url', res.url);
+			res.on("data", (d) => {
+				data = data + d;
+			});
+
+			res.on("end", () => {
+				const HLS = require('hls-parser'); 
+				// Parse the playlist
+				const playlist = HLS.parse(data);
+				// You can access the playlist as a JS object
+				if (playlist.isMasterPlaylist) {
+				// Master playlist
+					maxApi.post('### MASTER PLAYLIST');
+					resolve(playlist);
+				} else {
+				// Media playlist
+					maxApi.post('### MEDIA PLAYLIST');
+					resolve(playlist);
+				}
+			})
+		}).on("error", e => {
+			reject(e);
+		});
+	});
+}
+
+
+
 

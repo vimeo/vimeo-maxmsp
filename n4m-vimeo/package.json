@@ -9,7 +9,9 @@
   "license": "MIT",
   "dependencies": {
     "dotenv": "^6.2.0",
-    "max-api": "^1.0.1",
+    "hls-parser": "^0.5.0",
+    "https": "^1.0.0",
+    "url": "^0.11.0",
     "vimeo": "^2.1.1"
   }
 }
