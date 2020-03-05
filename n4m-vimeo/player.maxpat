@@ -39,6 +39,29 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"annotation" : "## Create a dutone image ##",
+					"bgmode" : 1,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-4",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "vz.2tonr.maxpat",
+					"numinlets" : 9,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 399.0, 567.0, 228.0, 130.0 ],
+					"prototypename" : "pixl",
+					"varname" : "2toner",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bgcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
 					"fontsize" : 14.0,
 					"id" : "obj-43",
@@ -48,8 +71,8 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 154.0, 89.0, 224.0, 25.0 ],
-					"text" : "https://vimeo.com/304020859",
+					"patching_rect" : [ 51.0, 49.0, 224.0, 25.0 ],
+					"text" : "https://vimeo.com/60098644",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"wordwrap" : 0
 				}
@@ -74,7 +97,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 384.0, 89.0, 150.0, 20.0 ],
+					"patching_rect" : [ 281.0, 49.0, 150.0, 20.0 ],
 					"text" : "< Enter your Vimeo URL"
 				}
 
@@ -203,7 +226,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 77.0, 135.0, 59.0, 22.0 ],
+					"patching_rect" : [ 322.0, 153.0, 59.0, 22.0 ],
 					"text" : "r to_node"
 				}
 
@@ -217,7 +240,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 154.0, 47.0, 37.0, 37.0 ]
+					"patching_rect" : [ 51.0, 7.0, 37.0, 37.0 ]
 				}
 
 			}
@@ -228,7 +251,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 154.0, 135.0, 73.0, 22.0 ],
+					"patching_rect" : [ 399.0, 153.0, 73.0, 22.0 ],
 					"text" : "prepend get"
 				}
 
@@ -260,7 +283,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "int" ],
-					"patching_rect" : [ 154.0, 300.0, 372.0, 26.0 ]
+					"patching_rect" : [ 14.0, 460.0, 372.0, 26.0 ]
 				}
 
 			}
@@ -273,7 +296,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 258.0, 221.0, 36.0, 23.0 ],
+					"patching_rect" : [ 118.0, 381.0, 36.0, 23.0 ],
 					"text" : "stop"
 				}
 
@@ -285,7 +308,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 154.0, 328.0, 371.0, 209.0 ]
+					"patching_rect" : [ 14.0, 488.0, 371.0, 209.0 ]
 				}
 
 			}
@@ -296,8 +319,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 154.0, 260.0, 66.0, 22.0 ],
-					"text" : "jit.qt.movie"
+					"patching_rect" : [ 70.0, 416.0, 53.0, 22.0 ],
+					"text" : "jit.movie"
 				}
 
 			}
@@ -308,7 +331,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 154.0, 198.0, 80.0, 22.0 ],
+					"patching_rect" : [ 14.0, 358.0, 80.0, 22.0 ],
 					"text" : "prepend read"
 				}
 
@@ -320,12 +343,10 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 154.0, 171.0, 115.0, 22.0 ],
+					"patching_rect" : [ 399.0, 189.0, 115.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -350,7 +371,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
+					"destination" : [ "obj-4", 0 ],
 					"source" : [ "obj-10", 0 ]
 				}
 
@@ -413,6 +434,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
 					"source" : [ "obj-43", 0 ]
 				}
@@ -426,6 +454,25 @@
 
 			}
  ],
+		"parameters" : 		{
+			"obj-4::obj-53" : [ "pictctrl[4]", "pictctrl[1]", 0 ],
+			"obj-4::obj-54" : [ "pictctrl[6]", "pictctrl[1]", 0 ],
+			"obj-4::obj-45" : [ "slider", "slider", 0 ],
+			"obj-4::obj-62" : [ "pictctrl[8]", "pictctrl[1]", 0 ],
+			"obj-4::obj-73" : [ "pictctrl[2]", "pictctrl[1]", 0 ],
+			"obj-4::obj-3" : [ "range[1]", "range", 0 ],
+			"obj-4::obj-27" : [ "swatch[1]", "swatch[1]", 0 ],
+			"obj-4::obj-58" : [ "pictctrl[3]", "pictctrl[1]", 0 ],
+			"obj-4::obj-64" : [ "pictctrl[7]", "pictctrl[1]", 0 ],
+			"obj-4::obj-12" : [ "pictctrl[5]", "pictctrl[1]", 0 ],
+			"obj-4::obj-28" : [ "swatch", "swatch", 0 ],
+			"obj-4::obj-49" : [ "pictctrl[9]", "pictctrl[1]", 0 ],
+			"parameterbanks" : 			{
+
+			}
+
+		}
+,
 		"dependency_cache" : [ 			{
 				"name" : "vimeo.js",
 				"bootpath" : "~/Side/vimeo-maxmsp/n4m-vimeo",
@@ -449,6 +496,42 @@
 				"name" : "fit_jweb_to_bounds.js",
 				"bootpath" : "C74:/packages/Node For Max/patchers/debug-monitor",
 				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vz.2tonr.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "data-handler.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vzgl-object.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vizzie-global.js",
+				"bootpath" : "C74:/packages/Vizzie/code",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "video-handler.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vzgl-disable.maxpat",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
+				"type" : "JSON",
 				"implicit" : 1
 			}
  ],
