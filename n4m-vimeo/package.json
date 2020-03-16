@@ -9,7 +9,6 @@
   "license": "MIT",
   "dependencies": {
     "dotenv": "^6.2.0",
-    "max-api": "^1.0.1",
     "vimeo": "^2.1.1"
   }
 }
