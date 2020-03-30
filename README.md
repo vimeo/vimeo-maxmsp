@@ -6,7 +6,7 @@ API to play and manipulate Vimeo videos on Max/MSP and Jitter.
 This API currently supports only progressive video playback.
 
 ## Requirements
-- Max 7 or higher
+- Max 8 or higher
 - QuickTime
 - Developer credentials to your Vimeo account
 
