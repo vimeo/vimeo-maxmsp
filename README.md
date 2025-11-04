@@ -1,3 +1,9 @@
+**ARCHIVED REPOSITORY:** This project is no longer actively maintained or supported by Vimeo.
+
+We recommend forking this repository if you wish to continue development or make modifications. No further updates or bug fixes will be provided here.
+
+<hr>
+
 # <img src="https://user-images.githubusercontent.com/33762/33720344-abc20bb8-db31-11e7-8362-59a4985aeff0.png" width="150" />
 
 ### Vimeo-Max/MSP  
